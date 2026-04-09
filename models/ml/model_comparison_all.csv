@@ -1,0 +1,7 @@
+model,type,wmape,rank,vs_ma7_pct,beats_target,beats_stretch
+XGBoost,ML,11.064908035038822,1,42.5,True,True
+Prophet,ML,11.156389586816934,2,42.0,True,True
+MA7 (Best Baseline),Baseline,19.25,3,0.0,False,False
+Seasonal Naive,Baseline,23.93,4,-24.3,False,False
+Naive,Baseline,24.67,5,-28.2,False,False
+Drift,Baseline,25.19,6,-30.9,False,False

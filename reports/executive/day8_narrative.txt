@@ -1,0 +1,120 @@
+
+╔══════════════════════════════════════════════════════════════════╗
+║  DAY 8 EXECUTIVE NARRATIVE — ML FORECASTING RESULTS             ║
+║  Regional Demand Forecasting + Inventory Optimization           ║
+║  Author : arvindswami014uk                                      ║
+║  Date   : 2026-04-09                                          ║
+╚══════════════════════════════════════════════════════════════════╝
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+EXECUTIVE SUMMARY
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Day 8 introduced two machine learning forecasting approaches —
+XGBoost (gradient boosted decision trees) and Facebook Prophet
+(Bayesian structural time series) — evaluated on the same 21-day
+holdout period used for Day 7 statistical baselines.
+
+Best ML model    : XGBoost
+Best ML WMAPE    : 11.06%
+MA7 Baseline     : 19.25%
+Improvement      : +42.5% vs best baseline
+Day 8 Target     : ✅ ACHIEVED (< 15.4%)
+Stretch Goal     : ✅ ACHIEVED (< 12.0%)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+MODEL RESULTS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+XGBoost
+  WMAPE  : 11.06%
+  RMSE   : 5.17
+  Bias   : -0.040
+  Method : Single global model, 46 engineered features,
+           gradient boosted trees with early stopping at
+           iteration 228
+
+Prophet
+  WMAPE  : 11.16%
+  RMSE   : 5.16
+  Bias   : +0.335
+  Method : Per-series Bayesian structural model,
+           weekly + yearly seasonality,
+           4 external regressors (holiday, prime, marketing, weather)
+  Fits   : 125 successful / 125 total SKU-Region combos
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+FEATURE ENGINEERING IMPACT
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Total features engineered : 46
+Most important feature    : roll_14_mean
+Top feature group         : Rolling Stats
+  → 81.9% of total model decision weight
+
+Feature groups by importance:
+  Rolling Stats          81.9%
+  Event Flags            7.0%
+  Calendar               5.9%
+  Lag Features           0.8%
+  Product Attributes     0.5%
+  Price                  0.3%
+  Encoded Cats           0.3%
+
+Business interpretation:
+  The dominance of roll_14_mean indicates that recent demand
+  history is the strongest predictor of near-term demand.
+  Event flags and calendar features add incremental accuracy
+  by capturing promotional lift and day-of-week seasonality.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+REGIONAL PERFORMANCE — XGBOOST
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  North        WMAPE = 9.74%
+  West         WMAPE = 10.79%
+  East         WMAPE = 10.97%
+  Central      WMAPE = 11.56%
+  South        WMAPE = 12.62%
+
+Best region  : North  (9.74%)
+Worst region : South (12.62%)
+
+Insight: South region shows higher forecast error, suggesting
+greater demand volatility or sparse event coverage in that region.
+Recommend targeted feature engineering or a region-specific model
+for South in the next iteration.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+CATEGORY PERFORMANCE — XGBOOST
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  Electronics     WMAPE = 9.69%
+  Beauty          WMAPE = 11.29%
+  Kitchen         WMAPE = 11.57%
+  Home            WMAPE = 11.65%
+  Pet             WMAPE = 11.71%
+  Toys            WMAPE = 13.64%
+
+Best category  : Electronics  (9.69%)
+Worst category : Toys (13.64%)
+
+Insight: Toys products carry higher inherent demand variability
+(e.g. trend-driven or impulse-purchase behaviour). Safety stock
+calculations on Day 9 must apply a higher service level buffer
+to this category to avoid stockouts.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+MODEL SELECTED FOR DAY 9
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Model    : XGBoost
+WMAPE    : 11.06%
+Rationale: Lowest WMAPE on 21-day holdout. Predictions clipped
+           at zero to prevent negative demand signals. Bias of
+           -0.040 units per day will be
+           incorporated into safety stock buffer calculations.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NEXT STEPS — DAY 9
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+→ Safety stock calculation using forecast error distribution
+→ Service level targets from dataset (target_service_level col)
+→ Lead time simulation per warehouse (primary_warehouse_id)
+→ Reorder point = forecast demand × lead time + safety stock
+→ Category-specific buffers for Toys (highest WMAPE)
+→ Region-specific buffers for South (highest WMAPE)
