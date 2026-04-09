@@ -1,0 +1,97 @@
+====================================================================
+DAY 9 EXECUTIVE NARRATIVE — INVENTORY POLICY RESULTS
+Regional Demand Forecasting + Inventory Optimization
+Author  : arvindswami014uk
+Date    : 2026-04-09
+====================================================================
+
+EXECUTIVE SUMMARY
+──────────────────────────────────────────────────
+Day 9 translated XGBoost ML forecasts (WMAPE = 11.06%) into
+actionable inventory policy for all 125 SKU-Region
+combinations across 5 regions and 6 product categories.
+Safety stock was calculated using the formula:
+  SS = Z x sigma_error x sqrt(lead_time)
+Reorder points were set to protect against stockouts
+during replenishment lead times.
+
+KEY INVENTORY METRICS
+──────────────────────────────────────────────────
+Total safety stock (units)  : 2310.5
+Total safety stock (value)  : $157,292.60
+Total annual storage cost   : $21,370.33
+Total replenishment needed  : $780,850.78
+Average days of supply      : 6.3 days
+Average safety stock/combo  : 18.5 units
+Average reorder point/combo : 173.9 units
+
+URGENCY DISTRIBUTION — ALL 125 COMBOS
+──────────────────────────────────────────────────
+CRITICAL  (stock below safety stock)  : 0 combos (0.0%)
+HIGH      (stock below ROP)           : 41 combos (32.8%)
+MEDIUM    (stock within 25% of ROP)   : 18 combos (14.4%)
+LOW       (stock 25-100% above ROP)   : 54 combos (43.2%)
+ADEQUATE  (stock > 2x ROP)            : 12 combos (9.6%)
+
+IMMEDIATE ACTION REQUIRED
+──────────────────────────────────────────────────
+Most urgent combo  : SKU-100006 / South / Electronics
+Stock gap          : -317.8 units below ROP
+Units to order     : 766 units
+Total combos needing immediate action : 41
+
+SAFETY STOCK BY CATEGORY
+──────────────────────────────────────────────────
+  Electronics     Avg SS =   19.3 units  Total = $ 68,339.15
+  Home            Avg SS =   18.1 units  Total = $ 28,677.52
+  Pet             Avg SS =   18.7 units  Total = $ 21,417.60
+  Toys            Avg SS =   17.4 units  Total = $ 16,568.13
+  Beauty          Avg SS =   21.7 units  Total = $ 13,415.89 <- BUFFERED +20%
+  Kitchen         Avg SS =   15.9 units  Total = $  8,874.31
+
+NOTE: Beauty category received +20% safety stock buffer
+      due to highest WMAPE in Day 8 (Beauty = most unpredictable demand)
+
+SAFETY STOCK BY REGION
+──────────────────────────────────────────────────
+  West         Avg SS =   24.9 units  Total = $ 41,359.59 <- BUFFERED +15%
+  South        Avg SS =   21.8 units  Total = $ 37,244.39
+  East         Avg SS =   16.9 units  Total = $ 29,541.25
+  North        Avg SS =   16.8 units  Total = $ 28,950.39
+  Central      Avg SS =   12.0 units  Total = $ 20,196.98
+
+NOTE: West region received +15% safety stock buffer
+      due to highest regional WMAPE in Day 8
+
+WAREHOUSE REPLENISHMENT PRIORITY
+──────────────────────────────────────────────────
+  WH WH-W100000 Critical= 0  Repl cost=$227,207.29  Lead time=6 days
+  WH WH-S100000 Critical= 0  Repl cost=$179,126.76  Lead time=6 days
+  WH WH-E100000 Critical= 0  Repl cost=$173,627.86  Lead time=4 days
+  WH WH-N100000 Critical= 0  Repl cost=$154,188.11  Lead time=4 days
+  WH WH-C100000 Critical= 0  Repl cost=$ 46,700.76  Lead time=2 days
+
+FORECAST MODEL USED
+──────────────────────────────────────────────────
+Model              : XGBoost
+WMAPE              : 11.06%
+MA7 Baseline WMAPE : 19.25%
+Improvement        : +42.5% vs MA7 baseline
+Top feature        : roll_14_mean
+The roll_14_mean feature dominated model decisions,
+confirming that 14-day rolling average demand
+is the strongest predictor of near-term inventory needs.
+
+NEXT STEPS — DAY 10
+──────────────────────────────────────────────────
+Day 10 will use this inventory policy table to build
+an inventory placement optimizer that allocates stock
+across warehouses to minimise total holding + stockout cost.
+
+Inputs for Day 10:
+  models/inventory/inventory_policy_table.csv
+  models/inventory/safety_stock_table.csv
+  models/inventory/reorder_point_table.csv
+  models/ml/best_model_forecasts_day9.csv
+
+====================================================================

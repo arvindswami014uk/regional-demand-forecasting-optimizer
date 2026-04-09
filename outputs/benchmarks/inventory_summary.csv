@@ -1,0 +1,12 @@
+metric,value,unit
+total_combos,125,count
+total_safety_stock_units,2310.5,units
+total_safety_stock_value_usd,157292.6,USD
+total_annual_storage_cost_usd,21370.33,USD
+total_reorder_point_value_usd,1492784.16,USD
+total_replenishment_cost_usd,780850.78,USD
+critical_combos,0,count
+high_urgency_combos,41,count
+avg_days_of_supply,6.3,days
+forecast_model,XGBoost,name
+forecast_wmape_pct,11.06,pct
