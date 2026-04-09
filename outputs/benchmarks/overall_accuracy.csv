@@ -1,0 +1,5 @@
+method,mape_pct,wmape_pct,rmse,bias_pct,bias_direction
+MA7,21.97,19.25,9.03,11.15,OVER
+Seasonal Naive,25.2,23.93,11.34,2.56,OVER
+Naive,25.33,24.67,11.74,-1.15,UNDER
+Drift,25.75,25.19,11.96,-2.19,UNDER

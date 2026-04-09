@@ -1,0 +1,21 @@
+region,method,wmape_pct,mape_pct,rmse,bias_pct
+Central,MA7,19.38,22.43,8.44,11.63
+Central,Seasonal Naive,22.43,24.12,10.0,1.91
+Central,Naive,23.54,24.42,10.43,-2.33
+Central,Drift,24.14,24.9,10.66,-3.44
+East,MA7,18.68,21.34,8.54,12.89
+East,Naive,21.54,21.31,10.14,-4.9
+East,Drift,22.06,21.73,10.36,-6.19
+East,Seasonal Naive,22.33,22.99,10.43,0.82
+North,MA7,17.95,20.23,9.12,9.1
+North,Seasonal Naive,22.93,25.22,11.8,4.74
+North,Naive,24.15,26.59,12.26,3.17
+North,Drift,24.46,26.89,12.41,2.45
+South,MA7,19.75,23.27,8.33,12.0
+South,Seasonal Naive,26.06,28.14,11.02,4.81
+South,Naive,27.33,28.88,11.7,1.96
+South,Drift,27.91,29.3,11.93,0.91
+West,MA7,20.62,22.59,10.52,10.13
+West,Seasonal Naive,25.99,25.54,13.18,0.51
+West,Naive,26.9,25.47,13.81,-3.65
+West,Drift,27.5,25.94,14.06,-4.7

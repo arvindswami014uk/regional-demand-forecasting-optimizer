@@ -1,0 +1,16 @@
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.ipynb_checkpoints/
+
+# Large sample data (not your project files)
+sample_data/
+
+# Drive mount
+drive/
+
+# System
+.config/

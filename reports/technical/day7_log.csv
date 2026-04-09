@@ -1,0 +1,2 @@
+day,timestamp,best_method,best_wmape,day8_target,train_rows,test_rows,combos,status
+7,2026-04-09T10:57:20.940505,MA7,19.25,15.4,68000,2625,125,COMPLETE

@@ -1,0 +1,51 @@
+
+╔══════════════════════════════════════════════════════════════╗
+║   DAY 7 — EXECUTIVE BUSINESS NARRATIVE                      ║
+║   Regional Demand Forecasting + Inventory Optimization      ║
+╠══════════════════════════════════════════════════════════════╣
+║                                                             ║
+║  WHAT WAS DONE TODAY                                        ║
+║  Evaluated 4 baseline forecasting methods across all        ║
+║  SKU-Region combinations on a 21-day holdout period.      ║
+║                                                             ║
+║  METHODS TESTED                                             ║
+║  1. Naive          — Last observed value                    ║
+║  2. Seasonal Naive — Same weekday from last week            ║
+║  3. MA7            — 7-day moving average                   ║
+║  4. Drift          — Trend-extrapolated forecast            ║
+║                                                             ║
+║  OVERALL RESULTS                                            ║
+║  Best method  : MA7                                          ║
+║  Best WMAPE   : 19.25%                                   ║
+║  Second best  : Seasonal Naive                               ║
+║                                                             ║
+║  DAY 8 ML TARGET                                            ║
+║  XGBoost + Prophet must beat WMAPE < 15.40%             ║
+║  That is a 20% improvement over today's best baseline.      ║
+║                                                             ║
+║  REGIONAL INSIGHT                                           ║
+║  Easiest to forecast : North                              ║
+║  Hardest to forecast : West                               ║
+║  Action: West region needs higher safety stock         ║
+║  buffer on Day 9. Low forecastability = higher stockout      ║
+║  risk. Conservative reorder point recommended.              ║
+║                                                             ║
+║  CATEGORY INSIGHT                                           ║
+║  Most predictable    : Pet                                   ║
+║  Least predictable   : Toys                                 ║
+║  Action: Toys category = top priority for ML         ║
+║  model on Day 8. Baseline is insufficient here.             ║
+║                                                             ║
+║  BIAS INSIGHT                                               ║
+║  Over-forecasting    : ['MA7', 'Seasonal Naive']                 ║
+║  Under-forecasting   : ['Drift']                                ║
+║  Over-forecast risk  : Excess inventory = holding cost      ║
+║  Under-forecast risk : Stockouts = lost revenue             ║
+║                                                             ║
+║  RECOMMENDED NEXT STEPS — DAY 8                             ║
+║  1. Feature engineering (lag, rolling, events)              ║
+║  2. XGBoost trained on engineered features                  ║
+║  3. Prophet with weekly + yearly seasonality                ║
+║  4. Compare all methods on same 21-day holdout           ║
+║  5. Report WMAPE improvement vs today's baseline            ║
+╚══════════════════════════════════════════════════════════════╝
