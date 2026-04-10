@@ -1,0 +1,2 @@
+recommended_strategy,recommendation_type,constraints_passed,all_constraints_passed,fill_rate,avg_lead_time_days,total_cost_to_serve_usd,estimated_carbon_kg,same_region_fulfillment_rate,day12c_exec_score,selected_at
+Balanced,Best partial-fit winner,4,False,0.2599012990939818,1.7714285714285714,9350617.553969674,5936.993773199999,0.6571428571428571,0.9142105695447489,2026-04-10T19:08:35.329201

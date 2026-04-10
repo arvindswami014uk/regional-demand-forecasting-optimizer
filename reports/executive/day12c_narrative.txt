@@ -1,0 +1,41 @@
+Day 12C Executive Narrative — Constrained Strategy Selection
+
+Recommended strategy: Balanced
+Recommendation type: Best partial-fit winner
+
+Why this strategy was selected
+- It passed 4 out of 5 decision constraints.
+- Fill rate: 25.99%
+- Average lead time: 1.77 days
+- Total cost-to-serve: $9,350,617.55
+- Estimated carbon: 5,936.99 kg CO2e proxy
+- Same-region fulfillment rate: 65.71%
+
+What changed versus Day 11
+Day 11 identified the strongest strategy in comparative terms.
+Day 12C adds explicit business thresholds so the recommendation now reflects constrained decision logic rather than average ranking alone.
+
+Forecast and inventory context
+- Forecast model in production path: XGBoost
+- Forecast WMAPE: 11.06%
+- Baseline MA7 WMAPE: 19.25%
+- Improvement vs baseline: 42.5%
+- Day 9 safety stock value: \$157,292.60
+- Day 9 annual storage cost: \$21,370.33
+- Replenishment need identified: \$780,850.78
+- High urgency combinations: 41
+
+Scenario robustness view
+- Most robust strategy across scenarios: Balanced
+- Average constraints passed across scenarios: 3.33
+
+Operating recommendation
+Use Balanced as the current default strategy when service, speed, cost, carbon, and same-region thresholds remain unchanged.
+Escalate to override rules if fill-rate pressure, disruption intensity, or sustainability targets materially change.
+
+Important limitation
+This framework is designed for comparative planning and executive decision support.
+It uses synthetic network and carbon proxy assumptions rather than production-grade lane-level emissions and ATP feeds.
+
+Next best step
+Convert this logic into a planner decision cockpit with scenario toggles, threshold overrides, and alert-based exception management.

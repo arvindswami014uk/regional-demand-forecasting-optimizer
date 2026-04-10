@@ -1,0 +1,6 @@
+constraint_name,constraint_value
+min_fill_rate,0.95
+max_avg_lead_time_days,2.5392156862745097
+max_total_cost_to_serve_usd,9442177.849246856
+max_estimated_carbon_kg,10243.116288300002
+min_same_region_fulfillment_rate,0.6

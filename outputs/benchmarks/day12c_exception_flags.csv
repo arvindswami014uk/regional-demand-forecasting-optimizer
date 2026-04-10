@@ -1,0 +1,10 @@
+strategy,exception_type,severity
+Balanced,Fill rate below threshold,HIGH
+Carbon-first,Fill rate below threshold,HIGH
+Carbon-first,Cost-to-serve above threshold,MEDIUM
+Speed-first,Fill rate below threshold,HIGH
+Speed-first,Same-region fulfillment below threshold,LOW
+Cost-first,Fill rate below threshold,HIGH
+Cost-first,Lead time above threshold,HIGH
+Cost-first,Carbon above threshold,MEDIUM
+Cost-first,Same-region fulfillment below threshold,LOW
