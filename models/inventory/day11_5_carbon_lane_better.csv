@@ -1,4 +1,4 @@
-warehouse_id,warehouse_region_proxy,demand_region,lane_days,same_region_flag,lane_type,lane_emission_factor_kg_per_unit,warehouse_cost_multiplier,warehouse_speed_multiplier,warehouse_carbon_multiplier,proxy_model_note
+warehouse_id,warehouse_region_proxy,demand_region,lane_days,same_region_flag,lane_type,base_lane_emission_factor_kg_per_unit,warehouse_cost_multiplier,warehouse_speed_multiplier,warehouse_carbon_multiplier,proxy_model_note
 WH-C100000,Central,Central,1,1,same-region,0.15,0.931010693342532,0.85,1.05,synthetic carbon-emissions proxy for comparative planning analysis
 WH-C100000,Central,East,2,0,2-day,0.25,0.931010693342532,0.85,1.05,synthetic carbon-emissions proxy for comparative planning analysis
 WH-C100000,Central,North,3,0,3-day,0.4,0.931010693342532,0.85,1.05,synthetic carbon-emissions proxy for comparative planning analysis

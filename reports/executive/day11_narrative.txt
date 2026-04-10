@@ -11,7 +11,7 @@ The inventory foundation carries forward Day 9 policy results including \$157,29
 What was built today
 A synthetic carbon-emissions proxy for comparative planning analysis was introduced to estimate carbon-to-serve by lane.
 The notebook compares four fulfillment strategies: Speed-first, Cost-first, Carbon-first, and Balanced.
-The Balanced strategy is designed to support green-fast fulfillment by protecting service while reducing unnecessary carbon intensity and cross-region movement.
+Because richer raw network files were not confirmed in the repo, a data-anchored synthetic network was built from inventory policy and master data.
 
 Decision framework
 Speed-first prioritizes fastest delivery performance.
@@ -19,7 +19,7 @@ Cost-first prioritizes lower spend but can expose service risk if network flexib
 Carbon-first prioritizes lower-carbon fulfillment paths, especially same-region allocation.
 Balanced combines service, cost, and carbon into a practical operating recommendation.
 
-Current recommended strategy: Speed-first
+Current recommended strategy: Carbon-first
 This recommendation is based on a blended service-cost-carbon scorecard under the base scenario.
 It should be treated as a decision-support policy, supported by planner overrides, scenario rules, and governance controls.
 

@@ -2,5 +2,5 @@ risk_id,risk_type,description,impact,control
 R1,Schema drift,Input columns differ from expected structure,Broken joins or incorrect KPI logic,Schema validation and explicit column discovery
 R2,Forecast concentration risk,West and Beauty historically show weaker forecast performance,Under-buffering or service miss,Scenario protection and planner review
 R3,Synthetic carbon proxy,"Carbon results are comparative proxies, not measured emissions",Cannot claim precise ESG accounting,Clear disclosure in narratives and charts
-R4,Missing Day 10 path artifacts,Some Day 10 allocation outputs were not found at expected paths,Could break downstream assumptions,Optional-file safe loading and warehouse proxy fallback
+R4,Missing network/raw files,Expected raw network files and some Day 10 outputs were not found at expected paths,Limits realism of network optimization,Synthetic but data-anchored fallback network builder
 R5,Capacity proxy risk,Warehouse capacity is inferred rather than execution-grade ATP,Operational feasibility may differ,Use actual ATP and warehouse constraints when available

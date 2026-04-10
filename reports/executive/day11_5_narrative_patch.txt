@@ -1,0 +1,19 @@
+Day 11.5 Narrative Patch — Strategy Differentiation Refinement
+
+The initial Day 11 strategy outputs were too similar across Speed-first, Cost-first, Carbon-first, and Balanced policies.
+That indicated the synthetic network assumptions were not creating enough tension between service, cost, and carbon objectives.
+
+To correct this, the Day 11.5 refinement introduced stronger warehouse-level differentiation using:
+- warehouse cost multipliers
+- warehouse speed multipliers
+- warehouse carbon multipliers
+- tighter effective capacity pressure
+- stronger same-region preference for carbon-aware strategies
+- urgency penalties for slower cross-region fulfillment
+
+This produced a more realistic green-fast fulfillment comparison.
+The refined recommended strategy is: Carbon-first.
+
+Important disclosure:
+These results still rely on synthetic carbon and lane assumptions for comparative planning analysis.
+They should not be presented as measured emissions or execution-grade transport optimization.
