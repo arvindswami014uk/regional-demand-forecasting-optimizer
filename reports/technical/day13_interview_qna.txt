@@ -1,0 +1,16 @@
+Day 13 Interview Q&A
+
+Q: Why did you use WMAPE?
+A: WMAPE is business-friendly for demand forecasting because it weights error by volume and avoids overemphasizing low-volume series.
+
+Q: Why was XGBoost chosen over Prophet?
+A: XGBoost achieved the best WMAPE at 11.06% and captured richer feature interactions from engineered demand signals.
+
+Q: How did you connect forecasting to business action?
+A: I converted forecasts into safety stock and reorder point policies, then used those outputs to inform broader fulfillment strategy decisions.
+
+Q: What is the biggest limitation?
+A: The carbon metric is a synthetic proxy for comparative strategy evaluation and should not be treated as an audited ESG measure.
+
+Q: What is the executive recommendation?
+A: Use XGBoost for planning, deploy policy-based inventory controls, and default to Carbon-first fulfillment under the current network assumptions with governed override rules.

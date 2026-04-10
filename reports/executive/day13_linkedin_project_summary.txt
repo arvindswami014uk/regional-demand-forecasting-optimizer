@@ -1,0 +1,6 @@
+Built an end-to-end Regional Demand Forecasting + Inventory Optimization capstone in Python using Google Colab.
+Improved forecast accuracy from a MA7 baseline WMAPE of 19.25% to XGBoost WMAPE of 11.06%, a 42.5% improvement.
+Translated forecasts into inventory policy with $157,292.60 safety stock, $21,370.33 annual storage cost, and $780,850.78 replenishment need visibility across 125 SKU-region combinations.
+Extended the project into fulfillment strategy design by comparing service, cost, and synthetic carbon trade-offs across scenarios.
+Key insight: in the current network proxy, lower-carbon routing aligned with faster same-region fulfillment, making Carbon-first the recommended strategy.
+Project includes forecasting benchmarks, ML modeling, feature engineering, inventory policy logic, scenario analysis, governance documentation, and executive-ready storytelling.

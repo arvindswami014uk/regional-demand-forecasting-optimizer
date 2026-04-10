@@ -1,0 +1,55 @@
+Day 13 Executive Memo — Regional Demand Forecasting + Inventory Optimization
+
+Business problem
+The business needed a more reliable way to forecast regional SKU demand, translate that demand into inventory policy, and choose a fulfillment strategy that balances service, cost, and sustainability.
+
+Approach
+This capstone combined three decision layers: demand forecasting, inventory optimization, and strategic fulfillment scenario analysis. The workflow moved from baseline forecasting to machine learning uplift, then from forecast outputs into safety stock and reorder point decisions, and finally into a constrained operating strategy comparison.
+
+Data scope
+The working dataset covered approximately 25 SKUs across 5 regions and 6 categories. The engineered daily forecasting frame used roughly 70,625 SKU-region-day observations over the project horizon, with a 21-day walk-forward holdout for model evaluation.
+
+Forecasting result
+The best baseline model was MA7 at 19.25% WMAPE. The best machine learning model was XGBoost at 11.06% WMAPE, outperforming Prophet at 11.16% and delivering a 42.5% improvement versus the baseline.
+This matters because lower forecast error improves replenishment timing, reduces overstock and stockout risk, and gives planners a stronger operating signal at the regional level.
+
+Inventory policy result
+Using the XGBoost forecast as the planning signal, the inventory policy layer estimated $157,292.60 in safety stock value, $21,370.33 in annual storage cost, and $780,850.78 in replenishment need across 125 SKU-region combinations.
+The analysis identified 41 high-urgency combinations, average days of supply of 6.3, and 0 critical combinations at the time of the run.
+
+Strategic trade-off analysis
+Scenario testing compared service, cost, carbon proxy, and same-region fulfillment outcomes across alternative fulfillment strategies.
+Speed-first remained strongest on fill rate and cost-to-serve.
+Carbon-first delivered the lowest estimated carbon and, in the current synthetic network proxy, also emerged as the fastest option because same-region routing reduced both emissions and lead time.
+
+Constrained decision logic
+The operating recommendation is not based on one KPI in isolation. It is based on decision logic that first screens for feasibility, then compares trade-offs across service, cost, and carbon proxy, and finally selects the best-fit strategy under the current network assumptions.
+
+Recommended operating model
+Recommend a planning stack built on XGBoost forecasting, policy-based safety stock and reorder point settings, and a Carbon-first fulfillment strategy for the current network design.
+This recommendation should be governed with planner override rules, KPI monitoring, and periodic recalibration of lead-time, carbon, and warehouse assumptions.
+
+Quantified business impact
+- Forecast error reduced from 19.25% to 11.06% WMAPE
+- Relative accuracy improvement of 42.5% versus the strongest baseline
+- Inventory policy translated forecast outputs into $157,292.60 safety stock and $780,850.78 replenishment planning visibility
+- Network strategy analysis showed that carbon-aware routing can align with faster same-region fulfillment under the current proxy design
+
+Assumptions
+- Historical synthetic demand is representative enough for comparative modeling and scenario testing
+- Lead time and carbon calculations are decision-support proxies, not audited external metrics
+- Inventory policy outputs assume current cost and service inputs remain directionally stable
+
+Limitations
+- Carbon values are synthetic comparative proxies and are not suitable for formal ESG disclosure
+- Scenario outputs are only as strong as the warehouse, routing, and cost assumptions encoded in the current network
+- Performance may vary by segment; worst observed region was West and worst category was Beauty
+
+Next steps
+1. Productionize the XGBoost feature pipeline and refresh cadence
+2. Recalibrate inventory policy monthly with updated demand volatility and lead-time inputs
+3. Stress-test fulfillment recommendations under alternate warehouse and transport assumptions
+4. Add a formal business-controlled planner override workflow and KPI exception dashboard
+
+Bottom line
+This capstone demonstrates an end-to-end operating decision system: forecast demand more accurately, convert signal into inventory policy, and choose a strategy that balances service, cost, and sustainability. The result is a portfolio-grade example of analytics translated into business action.

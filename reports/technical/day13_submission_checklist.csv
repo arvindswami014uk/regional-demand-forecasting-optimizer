@@ -1,0 +1,13 @@
+file_path,expected_present,notes
+reports/executive/day13_executive_memo.txt,True,Created Day 13
+reports/executive/day13_board_memo.txt,True,Created Day 13
+reports/executive/day13_linkedin_project_summary.txt,True,Created Day 13
+reports/presentation/day13_slide_builder.csv,True,Created Day 13
+reports/presentation/day13_speaker_notes.txt,True,Created Day 13
+README_day13_reviewer_guide.txt,True,Created Day 13
+reports/technical/day13_submission_checklist.csv,True,Self-referential output
+reports/technical/day13_file_manifest.csv,True,Created Day 13
+reports/technical/day13_reproducibility_notes.txt,True,Created Day 13
+reports/technical/day13_resume_bullets.txt,True,Created Day 13
+reports/technical/day13_project_summary_for_cv.txt,True,Created Day 13
+reports/technical/day13_log.csv,False,To be created in Block 5

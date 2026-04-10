@@ -1,0 +1,22 @@
+Day 13 Board Memo — Regional Demand Forecasting + Inventory Optimization
+
+Decision
+Adopt XGBoost-based regional demand forecasting, retain policy-based inventory controls, and deploy a Carbon-first fulfillment strategy under the current network proxy.
+
+Why now
+The current process opportunity is not just better forecasting. It is better commercial control across demand, inventory, and fulfillment decisions.
+
+What changed
+- Forecast WMAPE improved from 19.25% to 11.06%
+- Improvement versus strongest baseline: 42.5%
+- Inventory policy now quantifies $157,292.60 in safety stock and $780,850.78 in replenishment needs
+- 41 SKU-region combinations need prioritized attention
+
+Management insight
+Under the current synthetic network design, the lower-carbon option also performs well operationally because same-region routing lowers both emissions and lead time.
+
+Governance note
+Carbon results are suitable for strategy comparison, not external ESG reporting.
+
+Executive recommendation
+Proceed with Carbon-first as the default planning recommendation, but preserve Speed-first as a tactical override when service or cost thresholds are at risk.

@@ -1,0 +1,35 @@
+Slide 1: Regional Demand Forecasting + Inventory Optimization
+Speaker notes: Open with the business problem, not the code. This project is about making planning decisions more accurate, more explainable, and more actionable.
+
+Slide 2: Business Context
+Speaker notes: Frame the work as a decision system. The business value comes from linking demand insight to inventory and network choices.
+
+Slide 3: Data Overview
+Speaker notes: Highlight that the evaluation setup was time-aware and operationally realistic, not random split validation.
+
+Slide 4: Forecasting Benchmark
+Speaker notes: Show that ML was earned, not assumed. Benchmarks matter because they prove value relative to simpler planning rules.
+
+Slide 5: Machine Learning Improvement
+Speaker notes: Explain why this matters operationally: better forecasts improve replenishment timing and reduce decision noise.
+
+Slide 6: Inventory Policy Translation
+Speaker notes: This slide is the bridge from analytics to operations. Forecast accuracy becomes inventory policy and cash planning.
+
+Slide 7: Strategy Comparison
+Speaker notes: State the non-obvious insight clearly: sustainability and speed are aligned here because of routing structure, not because carbon is always faster.
+
+Slide 8: Constrained Decision Engine
+Speaker notes: This is where the project becomes management-grade. The point is governed decision logic, not dashboard theater.
+
+Slide 9: Financial Impact and ROI Story
+Speaker notes: Avoid claiming audited savings unless directly measured. Position ROI as decision-quality improvement with quantified operational exposure.
+
+Slide 10: Recommendation
+Speaker notes: Make the recommendation crisp. One sentence per layer: forecast, inventory, strategy.
+
+Slide 11: Risks and Limitations
+Speaker notes: Strong projects acknowledge limits cleanly. This builds credibility instead of weakening the story.
+
+Slide 12: Next Steps
+Speaker notes: End on scale-up, governance, and business adoption. Show that this is implementation-ready thinking.

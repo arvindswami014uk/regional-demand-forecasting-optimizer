@@ -1,0 +1,5 @@
+- Built an end-to-end regional demand forecasting and inventory optimization capstone in Python, connecting ML forecasting, inventory policy, and fulfillment strategy decisions.
+- Improved forecast accuracy from 19.25% WMAPE (best baseline MA7) to 11.06% WMAPE using XGBoost, delivering a 42.5% improvement versus baseline.
+- Engineered forecasting outputs into safety stock and reorder point policies across 125 SKU-region combinations, quantifying \$157.3K safety stock and \$780.9K replenishment need.
+- Designed a scenario-based fulfillment strategy framework comparing service, cost, same-region routing, and synthetic carbon trade-offs for executive decision-making.
+- Produced portfolio-grade executive memos, board summaries, reproducibility notes, and presentation content to translate technical analysis into business recommendations.

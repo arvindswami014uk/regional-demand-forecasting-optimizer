@@ -1,0 +1,20 @@
+Day 13 Reproducibility Notes
+
+Environment
+- Built in Google Colab
+- Python-based workflow
+- Repo cloned into /content/regional-demand-forecasting-optimizer
+
+Reliability controls used
+- Local-first CSV loading with GitHub raw fallback
+- Dynamic column detection via find_column() to prevent schema-related KeyError issues
+- Git commands executed with cwd=REPO_PATH
+- All Day 13 outputs saved directly inside REPO_PATH
+
+Known assumptions
+- Exact confirmed business numbers were preserved from prior validated project days
+- Day 12C outputs were used only if present; if absent, Day 11.5 strategy logic remained the fallback
+- Scorecard column names were validated dynamically
+
+Main reproducibility caveat
+- If upstream files are changed manually in GitHub, narrative outputs may differ from prior validated statements and should be re-reviewed before final submission.

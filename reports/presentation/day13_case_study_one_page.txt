@@ -1,0 +1,16 @@
+One-Page Case Study — Regional Demand Forecasting + Inventory Optimization
+
+Situation
+Regional demand variability was creating planning uncertainty across inventory positioning and fulfillment decisions.
+
+Task
+Build an analytics solution that improves forecast accuracy, converts demand signal into policy actions, and supports strategic operating choices.
+
+Action
+Benchmarked time-series baselines, engineered features, trained XGBoost and Prophet, selected XGBoost as the best model, translated forecast outputs into safety stock and reorder point logic, and evaluated strategy scenarios across service, cost, and carbon proxy dimensions.
+
+Result
+Forecast error improved from 19.25% to 11.06% WMAPE, a 42.5% uplift versus baseline. Inventory policy quantified $157,292.60 in safety stock, $21,370.33 in annual storage cost, and $780,850.78 in replenishment needs. Carbon-first emerged as the recommended strategy under the current network proxy because same-region routing improved both carbon and lead time outcomes.
+
+Business takeaway
+The project demonstrates how forecasting, inventory control, and strategy design can be integrated into one decision system rather than treated as separate analytics exercises.

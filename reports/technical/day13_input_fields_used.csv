@@ -1,0 +1,5 @@
+artifact,fields_used
+overall_accuracy,"method, wmape_pct"
+inventory_policy_table,"sku_id, region, category, safety_stock_value_usd, annual_storage_cost_usd, replenishment_cost_usd, urgency_level, days_of_supply"
+day11_5_executive_scorecard_v2,"strategy, fill_rate, avg_lead_time_days, total_cost_to_serve_usd, estimated_carbon_kg, same_region_fulfillment_rate"
+best_model_forecasts_day9,"date, sku_id, region, category, units_ordered, best_forecast, model_used, model_wmape"

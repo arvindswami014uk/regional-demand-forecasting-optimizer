@@ -1,0 +1,7 @@
+block,activity,status
+Block 0,"Session startup, repo clone, helper functions, input audit completed",success
+Block 1,Core summary metrics and normalized strategy table created,success
+Block 2,"Executive memo, board memo, and LinkedIn summary saved",success
+Block 3,Presentation slide builder and speaker notes saved,success
+Block 4,"Reviewer guide, manifest, reproducibility notes, resume bullets, CV summary, checklist saved",success
+Block 5,Optional one-page case study and interview Q&A saved,success
