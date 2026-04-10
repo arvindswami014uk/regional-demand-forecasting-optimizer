@@ -1,0 +1,26 @@
+warehouse_id,demand_region,warehouse_region_proxy,lane_days,lane_type,lane_emission_factor_kg_per_unit,proxy_model_note
+WH-C100000,Central,Central,1,same-region,0.15,synthetic carbon-emissions proxy for comparative planning analysis
+WH-C100000,East,Central,2,2-day,0.25,synthetic carbon-emissions proxy for comparative planning analysis
+WH-C100000,North,Central,3,3-day,0.4,synthetic carbon-emissions proxy for comparative planning analysis
+WH-C100000,South,Central,4,4-day,0.6,synthetic carbon-emissions proxy for comparative planning analysis
+WH-C100000,West,Central,4,4-day,0.6,synthetic carbon-emissions proxy for comparative planning analysis
+WH-E100000,Central,East,2,2-day,0.25,synthetic carbon-emissions proxy for comparative planning analysis
+WH-E100000,East,East,1,same-region,0.15,synthetic carbon-emissions proxy for comparative planning analysis
+WH-E100000,North,East,2,2-day,0.25,synthetic carbon-emissions proxy for comparative planning analysis
+WH-E100000,South,East,3,3-day,0.4,synthetic carbon-emissions proxy for comparative planning analysis
+WH-E100000,West,East,4,4-day,0.6,synthetic carbon-emissions proxy for comparative planning analysis
+WH-N100000,Central,North,3,3-day,0.4,synthetic carbon-emissions proxy for comparative planning analysis
+WH-N100000,East,North,2,2-day,0.25,synthetic carbon-emissions proxy for comparative planning analysis
+WH-N100000,North,North,1,same-region,0.15,synthetic carbon-emissions proxy for comparative planning analysis
+WH-N100000,South,North,2,2-day,0.25,synthetic carbon-emissions proxy for comparative planning analysis
+WH-N100000,West,North,3,3-day,0.4,synthetic carbon-emissions proxy for comparative planning analysis
+WH-S100000,Central,South,4,4-day,0.6,synthetic carbon-emissions proxy for comparative planning analysis
+WH-S100000,East,South,3,3-day,0.4,synthetic carbon-emissions proxy for comparative planning analysis
+WH-S100000,North,South,2,2-day,0.25,synthetic carbon-emissions proxy for comparative planning analysis
+WH-S100000,South,South,1,same-region,0.15,synthetic carbon-emissions proxy for comparative planning analysis
+WH-S100000,West,South,2,2-day,0.25,synthetic carbon-emissions proxy for comparative planning analysis
+WH-W100000,Central,West,4,4-day,0.6,synthetic carbon-emissions proxy for comparative planning analysis
+WH-W100000,East,West,4,4-day,0.6,synthetic carbon-emissions proxy for comparative planning analysis
+WH-W100000,North,West,3,3-day,0.4,synthetic carbon-emissions proxy for comparative planning analysis
+WH-W100000,South,West,2,2-day,0.25,synthetic carbon-emissions proxy for comparative planning analysis
+WH-W100000,West,West,1,same-region,0.15,synthetic carbon-emissions proxy for comparative planning analysis

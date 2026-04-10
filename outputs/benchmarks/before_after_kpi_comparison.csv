@@ -1,0 +1,5 @@
+comparison_type,baseline,baseline_value,recommended_state,recommended_value,unit,direction
+Forecast accuracy,MA7,19.25,XGBoost,11.06,WMAPE %,lower is better
+Safety stock value,Day 9 policy,157292.6,Day 11 carry-forward policy,157292.6,USD,context metric
+Annual storage cost,Day 9 policy,21370.33,Day 11 carry-forward policy,21370.33,USD,lower is better
+Replenishment needed,Day 9 policy,780850.78,Day 11 carry-forward policy,780850.78,USD,context metric

@@ -1,0 +1,34 @@
+Day 11 Executive Narrative — Green-Fast Fulfillment
+
+Objective
+Day 11 extends the capstone from forecasting and inventory policy into sustainable fulfillment decision support.
+The project now recommends how the fulfillment network should respond to forecasted regional demand while balancing service, cost, and carbon intensity.
+
+Confirmed carry-forward benchmarks
+The forecasting foundation remains the Day 8 XGBoost model with 11.06% WMAPE, materially better than the 19.25% MA7 baseline.
+The inventory foundation carries forward Day 9 policy results including \$157,292.60 in safety stock value, \$21,370.33 in annual storage cost, and \$780,850.78 in replenishment requirement.
+
+What was built today
+A synthetic carbon-emissions proxy for comparative planning analysis was introduced to estimate carbon-to-serve by lane.
+The notebook compares four fulfillment strategies: Speed-first, Cost-first, Carbon-first, and Balanced.
+The Balanced strategy is designed to support green-fast fulfillment by protecting service while reducing unnecessary carbon intensity and cross-region movement.
+
+Decision framework
+Speed-first prioritizes fastest delivery performance.
+Cost-first prioritizes lower spend but can expose service risk if network flexibility is constrained.
+Carbon-first prioritizes lower-carbon fulfillment paths, especially same-region allocation.
+Balanced combines service, cost, and carbon into a practical operating recommendation.
+
+Current recommended strategy: Speed-first
+This recommendation is based on a blended service-cost-carbon scorecard under the base scenario.
+It should be treated as a decision-support policy, supported by planner overrides, scenario rules, and governance controls.
+
+Strategic implication
+The capstone now behaves like a sustainable network planning case study and an operations strategy product, not only a forecasting notebook.
+
+Important disclosure
+Estimated carbon outputs are synthetic proxies and must not be presented as measured emissions.
+They are intended for comparative planning analysis only.
+
+Next business upgrade
+The next maturity step is to replace synthetic lane assumptions with measured distance, carrier performance, and actual carbon factors.

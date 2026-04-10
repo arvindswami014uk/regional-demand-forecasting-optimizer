@@ -1,0 +1,10 @@
+step_no,layer,description
+1,Data foundation,Load cleaned master table and benchmark outputs
+2,Forecasting,Use XGBoost forecast outputs at SKU-region level
+3,Inventory policy,"Carry forward reorder logic, urgency, stock gap, and service policy"
+4,Network modeling,Map warehouse-region lanes using proxy geography
+5,Carbon proxy,Estimate carbon-to-serve using transparent lane factors
+6,Strategy comparison,"Compare Speed-first, Cost-first, Carbon-first, and Balanced policies"
+7,Scenario planning,"Stress-test demand, capacity, disruption, and service conditions"
+8,Governance,"Define decision rules, assumptions, overrides, and risk controls"
+9,Executive output,"Generate recommendations, narratives, and dashboards"

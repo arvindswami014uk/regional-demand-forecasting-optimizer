@@ -1,0 +1,6 @@
+assumption_id,assumption,rationale,impact_if_wrong,mitigation
+A1,Lane emissions are represented by synthetic lane-based factors,Actual shipment-level carbon data unavailable,Absolute carbon values may differ from reality,Use for comparative planning only and replace with measured factors later
+A2,Same-region lanes are generally faster and lower carbon,Common fulfillment pattern,Strategy ranking may shift,Validate against actual carrier and lane history
+A3,Warehouse stock proxy approximates usable fulfillment supply,Detailed ATP not confirmed,Fill rate could be overstated,Replace with actual warehouse ATP feed
+A4,Stockout penalty proxy reflects margin and urgency risk,No explicit SLA penalty table provided,Cost-to-serve ranking may move,Calibrate against business SLA penalties and lost-sales estimates
+A5,"Balanced strategy should jointly optimize service, cost, and carbon",Project objective is green-fast fulfillment,Recommendation may not align with leadership priorities,Expose score weights as policy levers

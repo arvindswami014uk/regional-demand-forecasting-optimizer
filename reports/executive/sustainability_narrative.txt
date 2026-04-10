@@ -1,0 +1,19 @@
+Sustainability Narrative — Carbon-Aware Allocation and Green-Fast Fulfillment
+
+This project uses a synthetic carbon-emissions proxy for comparative planning analysis.
+Because confirmed shipment distance and measured emissions data were not available in the working dataset, transparent lane-based factors were used instead of claiming precise carbon accounting.
+
+The sustainability logic is operational.
+Same-region fulfillment is treated as lower-carbon and typically faster than unnecessary cross-region movement.
+Cross-region lanes are assigned progressively higher carbon factors as lead time increases.
+
+This enables a direct comparison between cost-to-serve and carbon-to-serve.
+It also makes same-region fulfillment a measurable operating metric rather than a qualitative aspiration.
+
+The business objective is not carbon minimization at any cost.
+The objective is green-fast fulfillment: lowering avoidable carbon intensity while preserving delivery promise performance and controlling fulfillment economics.
+
+This makes sustainability part of planning and network design.
+It is embedded in warehouse choice, rebalance logic, planner overrides, and scenario analysis.
+
+As a result, the capstone now frames sustainability as a decision variable in fulfillment planning, not just a reporting add-on.

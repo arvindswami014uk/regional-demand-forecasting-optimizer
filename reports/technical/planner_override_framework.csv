@@ -1,0 +1,5 @@
+override_type,who_can_override,when_allowed,approval_required,audit_field
+Demand intelligence override,Senior Demand Planner,Known event not reflected in history,Yes,override_reason
+Service protection override,Supply Planning Lead,Strategic customer or SLA risk,Yes,service_risk_justification
+Carbon-aware override,Network Planner,Lower-carbon lane available with acceptable service impact,Yes,carbon_tradeoff_note
+Emergency disruption override,Operations Director,Warehouse outage or severe disruption,Yes,incident_reference

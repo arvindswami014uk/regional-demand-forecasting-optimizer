@@ -1,0 +1,7 @@
+trigger,action,owner,SLA
+Fill rate below target,Shift allocation to faster lane or same-region warehouse,Supply Planner,Within 4 hours
+Carbon intensity above plan,Re-route to lower-carbon lane where service impact is acceptable,Network Planner,Within 1 business day
+High urgency and low days of supply,Prioritize replenishment and reserve same-region capacity,Inventory Planner,Same day
+Warehouse utilization above 95%,Rebalance stock to alternate warehouse,Warehouse Operations,Within 24 hours
+West region service degradation,Apply service safeguard and temporary buffer uplift,Regional Operations Manager,Same day
+Beauty forecast volatility rising,Escalate planner override review and protect service stock,Category Planner,Within 1 business day

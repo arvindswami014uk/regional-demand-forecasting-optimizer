@@ -1,0 +1,6 @@
+rule_id,condition,action,priority
+TR1,Same-region warehouse utilization > 95% and alternate warehouse < 80%,Transfer buffer stock to alternate warehouse,High
+TR2,High urgency SKU with < 5 days of supply,Pre-position units in same-region node,High
+TR3,Cross-region fulfillment rate > 35%,Review regional imbalance and shift cycle stock,Medium
+TR4,Carbon intensity above target for 3 periods,Rebalance to lower-carbon regional lane,Medium
+TR5,Demand spike in West or Beauty,Temporary service-first rebalancing with post-event normalization,High

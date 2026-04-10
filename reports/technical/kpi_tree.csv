@@ -1,0 +1,12 @@
+kpi_level,metric,definition
+North Star,Green-fast fulfillment performance,"Ability to fulfill demand quickly, economically, and with lower carbon intensity"
+Primary,Fill rate,Allocated units divided by required units
+Primary,Average lead time,Average lane days for fulfilled demand
+Primary,Total cost-to-serve,Allocation cost plus holding cost plus stockout penalty
+Primary,Estimated carbon emissions,Allocated units multiplied by synthetic lane emission factors
+Secondary,Same-region fulfillment rate,Share of allocations fulfilled from same-region node
+Secondary,Cross-region fulfillment rate,Share of allocations requiring cross-region movement
+Secondary,Carbon intensity,Estimated carbon divided by allocated units
+Secondary,Stockout penalty,Proxy financial impact of unmet demand
+Diagnostic,Warehouse utilization,Allocated units divided by capacity proxy
+Diagnostic,ABC/XYZ segment risk,Value-volatility segmentation for differentiated policy
