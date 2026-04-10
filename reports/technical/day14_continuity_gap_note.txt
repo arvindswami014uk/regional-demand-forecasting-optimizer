@@ -1,0 +1,18 @@
+DAY 14 CONTINUITY GAP NOTE
+===================================
+
+Known issue:
+- Existing Day 7 split files appear inconsistent with the stated project design.
+- Audit observed train_day7.csv at 4,965 rows and test_day7.csv at 35 rows.
+- Under 125 SKU-region combinations and a 21-day holdout, expected test rows would be approximately 2,625.
+
+Regeneration result:
+- A regenerated split was created from the preserved processed master table.
+- Source used: data/processed/master_working_fixed.csv
+- Regenerated train rows: 68000
+- Regenerated test rows: 2625
+- Eligible combo count represented: 125
+
+Reviewer guidance:
+- Original benchmark outputs remain the authoritative source for reported forecasting results in the final deck and README.
+- Regenerated split files are provided to improve continuity and reproducibility of the stated split logic.

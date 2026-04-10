@@ -1,0 +1,12 @@
+DAY 14 — TELL ME ABOUT THIS PROJECT
+======================================
+
+This project is a regional demand forecasting and inventory placement optimizer inspired by Amazon-style fulfillment planning.
+
+The business problem was that poor regional demand prediction can cause stockouts, expensive transfers, and uneven inventory positioning across the network.
+
+I approached it in three layers. First, I benchmarked forecasting models and found that XGBoost performed best with an 11.06% WMAPE, outperforming a moving-average baseline by 42.5%. Second, I translated those forecasts into safety stock and reorder point logic, which quantified safety stock value at \$157,292.60 and replenishment need at \$780,850.78. Third, I compared strategy scenarios across service, cost, and carbon-proxy trade-offs.
+
+One important nuance is that Carbon-first was the strongest unconstrained sustainability scenario, but Balanced became the final recommendation once constraints and operating feasibility were included. That distinction let me preserve analytical honesty while still giving a practical recommendation.
+
+The project demonstrates that I can connect forecasting, inventory logic, and executive decision-making in one end-to-end business workflow.

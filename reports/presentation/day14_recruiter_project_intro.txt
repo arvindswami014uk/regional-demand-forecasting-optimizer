@@ -1,0 +1,10 @@
+DAY 14 RECRUITER PROJECT INTRO
+==================================
+
+I built a supply chain analytics capstone that forecasts SKU-region demand and recommends inventory placement decisions across a fulfillment network.
+
+The project benchmarked forecasting models, selected XGBoost at 11.06% WMAPE, and then connected those outputs to safety stock, reorder point logic, and network strategy trade-offs.
+
+What makes it strong is that it does not stop at prediction. It goes all the way to an executive recommendation: Carbon-first was strongest in unconstrained sustainability comparison, but Balanced was the final recommendation once real-world constraints were applied.
+
+It showcases forecasting, optimization thinking, operations strategy, dashboard storytelling, and executive communication.

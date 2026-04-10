@@ -1,0 +1,18 @@
+DAY 15 SUBMISSION COVER NOTE
+=============================
+
+This submission presents a complete supply chain analytics capstone that connects demand forecasting, inventory policy, and constrained strategy recommendation.
+
+The final package is designed to be reviewer-friendly:
+- Executive summary and repo showcase provide fast context
+- Benchmark and policy outputs provide technical evidence
+- Reviewer walkthrough and artifact map reduce navigation friction
+- Continuity and reproducibility notes document known gaps honestly
+
+Final recommendation framing:
+- Forecasting: XGBoost
+- Inventory: safety stock and reorder point policy logic
+- Strategy insight: Carbon-first unconstrained
+- Final deployable strategy: Balanced constrained recommendation
+
+Thank you for reviewing the project.

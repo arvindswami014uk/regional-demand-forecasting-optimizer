@@ -1,0 +1,21 @@
+DAY 14 REPO SUMMARY
+=========================
+
+This repository presents a full analytics storyline from regional demand forecasting to inventory policy and constrained network strategy recommendation.
+
+Headline metrics:
+- XGBoost WMAPE: 11.06%
+- Prophet WMAPE: 11.16%
+- MA7 baseline WMAPE: 19.25%
+- Forecast improvement vs baseline: 42.5%
+- Safety stock value: \$157,292.60
+- Annual storage cost: \$21,370.33
+- Replenishment needed: \$780,850.78
+- High urgency combinations: 41
+- Average days of supply: 6.3
+- Final constrained strategy recommendation: Balanced
+
+Reviewer note:
+- Carbon-first is preserved as the strongest unconstrained scenario insight.
+- Balanced is preserved as the deployable constrained recommendation.
+- Carbon is a synthetic comparative proxy, not an ESG disclosure metric.

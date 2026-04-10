@@ -1,0 +1,12 @@
+DAY 15 ONE-MINUTE PITCH
+========================
+
+I built an Amazon-inspired supply chain analytics capstone that forecasts SKU-region demand and turns those predictions into inventory placement decisions.
+
+I compared a moving-average baseline, Prophet, and XGBoost, and selected XGBoost at 11.06% WMAPE, which was a 42.5% improvement over baseline.
+
+Then I translated forecast behavior into safety stock and reorder point logic, quantified inventory needs, and compared strategy scenarios across service, cost, and carbon-proxy trade-offs.
+
+The final recommendation was Balanced: Carbon-first looked strongest in unconstrained scenario comparison, but Balanced was the best practical choice once feasibility constraints were applied.
+
+The project shows that I can connect machine learning, operations strategy, and executive storytelling in one end-to-end workflow.

@@ -1,0 +1,13 @@
+artifact_name,path,business_meaning,best_for
+Executive summary,reports/executive/day15_final_executive_summary.txt,Board-ready summary of findings and recommendation,Executive
+README showcase,README_day14_project_showcase.txt,Top-level repo overview and project landing content,All reviewers
+Forecast accuracy,outputs/benchmarks/overall_accuracy.csv,Validated model accuracy comparison,Technical reviewer
+Model comparison,models/ml/model_comparison_all.csv,Forecast comparison outputs by model,Technical reviewer
+Feature importance,models/ml/feature_importance.csv,Model explainability output,Technical reviewer
+Inventory summary,outputs/benchmarks/inventory_summary.csv,Top-level inventory policy metrics,Business reviewer
+Safety stock table,models/inventory/safety_stock_table.csv,SKU-region safety stock decisions,Technical reviewer
+Reorder point table,models/inventory/reorder_point_table.csv,SKU-region reorder control logic,Technical reviewer
+Unconstrained strategy scorecard,outputs/benchmarks/day11_5_executive_scorecard_v2.csv,Scenario comparison before constraints,Executive reviewer
+Constrained strategy result,models/optimization/day12c_constrained_strategy_results.csv,Final feasible recommendation output,Executive reviewer
+Continuity note,reports/technical/day14_continuity_gap_note.txt,Explains Day 7 split issue and reproducibility position,Technical reviewer
+Submission manifest,reports/technical/day15_final_submission_manifest.csv,Map of final delivery package,All reviewers

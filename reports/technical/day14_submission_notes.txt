@@ -1,0 +1,8 @@
+DAY 14 SUBMISSION NOTES
+========================
+
+Final reviewer guidance:
+- Start with executive summary, then README showcase, then benchmark outputs, then strategy outputs.
+- Do not interpret the carbon metric as formal emissions accounting.
+- If Day 7 split continuity remains imperfect, rely on preserved benchmark outputs as the authoritative forecasting evidence.
+- Source-package grounding is based on preserved source and processed tables currently available in the repository.

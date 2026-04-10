@@ -1,0 +1,13 @@
+slide_number,slide_title,headline,key_points
+1,Title,Regional Demand Forecasting and Inventory Placement Optimizer,Project title and decision theme
+2,Business Problem,Why forecast error creates service and cost risk,"Stockouts, transfers, imbalance, delivery promise risk"
+3,Project Objective,Connect forecasting to inventory and network decisions,Business-first framing
+4,Method Summary,Forecasting + inventory policy + constrained strategy,Three-layer workflow
+5,Forecasting Results,XGBoost vs Prophet vs MA7 baseline,11.06% vs 11.16% vs 19.25%
+6,Model Explainability,Feature importance and weak segments,"roll_14_mean, West, Beauty"
+7,Inventory Implications,"Safety stock, replenishment, urgency","\$157,292.60, \$780,850.78, 41 urgency flags"
+8,Scenario Comparison,"Speed, cost, and carbon-proxy tradeoffs",Carbon-first unconstrained insight
+9,Constrained Recommendation,Why Balanced wins under practical rules,Feasible and deployable strategy
+10,Governance and Limitations,Synthetic carbon proxy and planner overrides,Not formal ESG disclosure
+11,Implementation Roadmap,"Pilot, monitoring, planner controls",Execution next steps
+12,Closing Ask,Approve Balanced pilot with KPI monitoring,Decision request

@@ -1,0 +1,10 @@
+DAY 15 HIRING MANAGER SUMMARY
+===============================
+
+This project is strong because it moves beyond model building and into operational decision support.
+
+The candidate benchmarked forecasting approaches, selected XGBoost at 11.06% WMAPE, translated results into safety stock and reorder point policy, and then made a constrained recommendation for network execution.
+
+The final recommendation is analytically honest: Carbon-first was the strongest unconstrained comparative scenario, but Balanced was the best deployable decision under practical constraints.
+
+This demonstrates forecasting skill, business framing, executive communication, and strong judgment under trade-offs.

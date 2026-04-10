@@ -1,0 +1,10 @@
+DAY 14 DEMO SCRIPT
+====================
+
+1. Start with the business problem: stockouts, transfers, inventory imbalance, and delivery risk.
+2. Show the forecast benchmark dashboard and explain why XGBoost won.
+3. Highlight the 42.5% improvement vs baseline.
+4. Transition into inventory policy outputs: safety stock, reorder points, urgency flags.
+5. Explain the strategy layer: unconstrained scenario comparison versus constrained recommendation.
+6. Clarify that Carbon-first won the unconstrained comparative proxy, but Balanced is the deployable final recommendation.
+7. End with next-step operating guidance: planner overrides, KPI monitoring, and future model extension.

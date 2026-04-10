@@ -1,0 +1,29 @@
+DAY 15 FINAL EXECUTIVE SUMMARY
+=================================
+
+Decision objective:
+Build a practical decision-support workflow that forecasts regional demand, quantifies inventory risk, and recommends a deployable fulfillment strategy.
+
+Headline findings:
+- XGBoost was the best forecasting model at 11.06% WMAPE.
+- Prophet was close at 11.16%, while the MA7 baseline was materially weaker at 19.25%.
+- The selected model improved weighted forecast accuracy by 42.5% versus baseline.
+- Inventory policy analysis estimated safety stock value at \$157,292.60 and replenishment need at \$780,850.78.
+- 41 SKU-region combinations were flagged as high urgency, with average days of supply at 6.3 and zero critical combinations.
+
+Recommendation:
+- Use XGBoost as the forecasting recommendation.
+- Use policy-based safety stock and reorder point logic as the operating inventory layer.
+- Preserve Carbon-first as the strongest unconstrained sustainability scenario insight.
+- Recommend Balanced as the final constrained strategy for deployment.
+
+Why Balanced is the final recommendation:
+Balanced provides the strongest decision under practical constraints and governance rules. It preserves the value of comparative scenario analysis without confusing unconstrained frontier performance with deployable operating policy.
+
+Governance note:
+Carbon metrics in this project are synthetic comparative proxies for planning use only. They are suitable for scenario comparison, not formal ESG disclosure.
+
+Next steps:
+- Operationalize planner overrides and KPI monitoring
+- Revisit high-urgency combinations with targeted service review
+- Extend the model with richer lead-time uncertainty and capacity logic

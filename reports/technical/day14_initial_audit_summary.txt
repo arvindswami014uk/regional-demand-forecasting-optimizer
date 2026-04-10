@@ -1,0 +1,20 @@
+DAY 14–15 QUICK AUDIT SUMMARY
+========================================
+
+Required files found: 37 / 37
+Day 12C files complete: YES
+Potential Day 13 artifacts discovered: 19
+
+Day 7 split audit:
+- train_day7 rows: 4965
+- test_day7 rows: 35
+- unique SKU-region combos estimate: 125
+- expected test rows under 125 combos x 21-day holdout: 2625
+- continuity issue still exists: YES
+
+Fields selected for final delivery assets:
+- README: project title, business problem, methodology, forecasting results, inventory results, strategy recommendation, artifact map, reviewer path, limitations, skills demonstrated, why this matters
+- portfolio_summary: business context, problem, approach, tool stack, key metrics, recommendation, impact, lessons learned
+- reviewer_flow: start here order, which notebooks/files matter, how to validate metrics, where charts live, where recommendation is documented
+- board_package: decision ask, headline results, tradeoffs, recommendation, constraints, risks, next steps
+- validation_checklist: artifact presence, metric consistency, gap handling, path correctness, saved outputs, git readiness

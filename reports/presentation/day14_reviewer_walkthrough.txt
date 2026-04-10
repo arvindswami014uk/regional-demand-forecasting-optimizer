@@ -1,0 +1,22 @@
+DAY 14 REVIEWER WALKTHROUGH
+=============================
+
+Start here order:
+1. reports/executive/day15_final_executive_summary.txt
+2. README_day14_project_showcase.txt
+3. outputs/benchmarks/overall_accuracy.csv
+4. models/ml/model_comparison_all.csv
+5. outputs/charts/forecasts/day8_model_comparison_dashboard.png
+6. outputs/benchmarks/inventory_summary.csv
+7. outputs/charts/inventory/day9_inventory_dashboard.png
+8. outputs/benchmarks/day11_5_executive_scorecard_v2.csv
+9. models/optimization/day12c_constrained_strategy_results.csv
+10. outputs/charts/day12c/day12c_exec_dashboard.png
+11. reports/technical/day14_continuity_gap_note.txt
+12. reports/technical/day15_final_submission_manifest.csv
+
+Interpretation guide:
+- Forecasting truth is anchored in benchmark and comparison outputs.
+- Inventory truth is anchored in policy and summary files.
+- Strategy truth distinguishes unconstrained insight from constrained recommendation.
+- Continuity notes explain any artifact mismatch without changing validated business metrics.

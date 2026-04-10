@@ -1,0 +1,38 @@
+DAY 15 FINAL BOARD TALK TRACK
+===============================
+
+Slide 1 — Title
+Today’s decision is how to turn regional demand forecasts into a smarter inventory placement policy for a fulfillment network.
+
+Slide 2 — Business problem
+When regional demand is misforecasted, the network pays through stockouts, emergency transfers, excess inventory, and weaker delivery performance.
+
+Slide 3 — Objective
+Our objective was not just to predict demand, but to support better operating decisions under service, cost, and sustainability trade-offs.
+
+Slide 4 — Method
+We built a three-layer workflow: forecasting, inventory policy translation, and constrained strategy recommendation.
+
+Slide 5 — Forecasting results
+XGBoost delivered the strongest forecast accuracy at 11.06% WMAPE, slightly ahead of Prophet at 11.16%, and materially ahead of the 19.25% moving-average baseline.
+
+Slide 6 — Explainability
+Recent demand behavior, especially roll_14_mean, was the most important driver. The weakest segments were the West region and Beauty category, which should receive focused monitoring.
+
+Slide 7 — Inventory implications
+The inventory policy layer estimated \$157,292.60 in safety stock value, \$21,370.33 in annual storage cost, and \$780,850.78 in replenishment need. We identified 41 high-urgency combinations but no critical combinations.
+
+Slide 8 — Scenario comparison
+In unconstrained scenario analysis, Carbon-first was the strongest sustainability-oriented comparative result in the synthetic proxy.
+
+Slide 9 — Recommendation
+After applying constraints and feasibility rules, Balanced is the recommended operating strategy. This preserves analytical insight while producing a deployable decision.
+
+Slide 10 — Governance
+Carbon results are synthetic comparative proxies for planning only. They are not formal emissions disclosures. Planner overrides and KPI monitoring remain necessary.
+
+Slide 11 — Roadmap
+Recommended next steps are to run a pilot, monitor service and transfer KPIs, and strengthen the model with richer lead-time and capacity logic.
+
+Slide 12 — Closing ask
+Approve a Balanced-strategy pilot supported by XGBoost forecasting and policy-based inventory controls.

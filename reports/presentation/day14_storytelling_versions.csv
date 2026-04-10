@@ -1,0 +1,5 @@
+audience,version_length,message
+Recruiter,30 seconds,Built a supply chain capstone that improved forecast accuracy to 11.06% WMAPE and converted predictions into inventory and network strategy recommendations.
+Hiring Manager,60 seconds,"Created an Amazon-inspired planning project that benchmarked forecasting models, selected XGBoost, quantified safety stock and replenishment needs, and recommended a constrained Balanced strategy for network execution."
+Technical Interviewer,90 seconds,"Used processed SKU-region demand history, compared MA7, Prophet, and XGBoost, selected XGBoost based on WMAPE, tied forecast variability to safety stock and reorder point logic, and framed unconstrained vs constrained strategy outcomes transparently."
+Executive,45 seconds,This project shows how better forecasting can improve service and delivery decisions while controlling transfer cost and inventory imbalance. The final recommendation was Balanced because it was the most deployable strategy under constraints.

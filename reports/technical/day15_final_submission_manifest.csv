@@ -1,0 +1,21 @@
+asset_name,path,business_purpose,exists
+Executive Summary,reports/executive/day15_final_executive_summary.txt,Final board-level summary of findings and recommendation,True
+Submission Cover Note,reports/executive/day15_submission_cover_note.txt,Front-door note for reviewers,True
+README Showcase,README_day14_project_showcase.txt,README-ready repo landing page content,True
+Repo Summary,reports/executive/day14_repo_summary.txt,High-level repo summary,True
+Portfolio Case Study,reports/presentation/day14_portfolio_case_study.txt,Recruiter and portfolio-facing project summary,True
+Recruiter Intro,reports/presentation/day14_recruiter_project_intro.txt,Short recruiter-friendly intro,True
+Storytelling Versions,reports/presentation/day14_storytelling_versions.csv,Audience-specific message variants,True
+Interview Q&A,reports/technical/day14_interview_qna_expanded.txt,Expanded interview preparation asset,True
+Tell Me About This Project,reports/technical/day14_tell_me_about_this_project.txt,Interview-ready narrative,True
+Demo Script,reports/presentation/day14_demo_script.txt,Presentation walkthrough script,True
+Reviewer Walkthrough,reports/presentation/day14_reviewer_walkthrough.txt,Structured review path,True
+Artifact Map,reports/technical/day14_final_artifact_map.csv,Maps technical artifacts to business meaning,True
+Submission Notes,reports/technical/day14_submission_notes.txt,Reviewer instructions and caveats,True
+QC Checklist,reports/technical/day14_quality_control_checklist.csv,Day 14 quality review,True
+Repo Health Diagnostics,reports/technical/day14_repo_health_diagnostics.csv,Professionalism and continuity diagnostics,True
+Continuity Gap Note,reports/technical/day14_continuity_gap_note.txt,Day 7 split issue handling,True
+Deck Outline,reports/presentation/day15_final_deck_outline.csv,Presentation structure,True
+Board Talk Track,reports/presentation/day15_final_board_talk_track.txt,Speaker notes for board presentation,True
+Final KPI Chart,outputs/charts/final/day15_project_kpi_summary.png,Summary KPI chart,True
+Strategy Bridge Chart,outputs/charts/final/day15_strategy_recommendation_bridge.png,Explains Carbon-first vs Balanced,True

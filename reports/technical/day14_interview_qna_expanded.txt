@@ -1,0 +1,26 @@
+DAY 14 — EXPANDED INTERVIEW Q&A
+==================================
+
+Q: Why did you choose XGBoost?
+A: It delivered the best validated forecasting accuracy at 11.06% WMAPE and slightly outperformed Prophet at 11.16%, while substantially beating the 19.25% MA7 baseline.
+
+Q: Why not stop at forecasting?
+A: Because the business does not buy forecasts. It buys decisions. I extended the project into safety stock, reorder point logic, and strategy recommendation.
+
+Q: What business impact does the project show?
+A: It quantifies where inventory risk sits, how much replenishment is needed, and which strategy is most deployable under constraints.
+
+Q: What is the significance of roll_14_mean?
+A: It was the top feature at 0.4682 importance, indicating recent demand behavior was a dominant predictor in the final model.
+
+Q: What was the hardest issue?
+A: Maintaining continuity between preserved project outputs and certain intermediate artifacts, especially the Day 7 split inconsistency. I handled that through audit transparency and reproducibility notes.
+
+Q: Why is Carbon-first not the final recommendation?
+A: Because unconstrained frontier performance is different from deployable operating policy. Balanced performed better once feasibility and decision rules were applied.
+
+Q: How should the carbon metric be interpreted?
+A: As a synthetic comparative proxy for scenario planning, not a formal ESG accounting measure.
+
+Q: What would you improve next?
+A: I would add richer capacity constraints, lead-time uncertainty simulation, and a formal cost-to-serve optimization layer.

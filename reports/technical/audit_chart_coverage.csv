@@ -1,0 +1,15 @@
+chart_path,size_bytes
+outputs/charts/day12c/day12c_exec_dashboard.png,473008
+outputs/charts/eda/q3_distribution_analysis.png,162424
+outputs/charts/features/feature_importance.png,221995
+outputs/charts/forecasts/day7_baseline_dashboard.png,362207
+outputs/charts/forecasts/day8_model_comparison_dashboard.png,522548
+outputs/charts/inventory/day9_inventory_dashboard.png,415938
+outputs/charts/inventory/reorder_point_chart.png,97467
+outputs/charts/inventory/safety_stock_heatmap.png,130121
+outputs/charts/sustainability/carbon_by_region.png,94943
+outputs/charts/sustainability/carbon_by_warehouse.png,130849
+outputs/charts/sustainability/cost_vs_carbon_frontier.png,101297
+outputs/charts/sustainability/day11_5_strategy_scorecard.png,278625
+outputs/charts/sustainability/day11_sustainability_dashboard.png,238781
+outputs/charts/sustainability/service_vs_carbon_chart.png,105554

@@ -1,0 +1,18 @@
+validation_item,status,note
+Validated forecasting metric used: XGBoost 11.06%,True,Preserved
+Validated forecasting metric used: Prophet 11.16%,True,Preserved
+Validated baseline metric used: MA7 19.25%,True,Preserved
+Validated uplift used: 42.5%,True,Preserved
+"Validated safety stock value used: \$157,292.60",True,Preserved
+"Validated annual storage cost used: \$21,370.33",True,Preserved
+"Validated replenishment needed used: \$780,850.78",True,Preserved
+Validated high urgency combos used: 41,True,Preserved
+Validated avg days of supply used: 6.3,True,Preserved
+Validated critical combos used: 0,True,Preserved
+Validated total combos used: 125,True,Preserved
+"Strategy framing resolved: Carbon-first unconstrained, Balanced constrained",True,Resolved
+Source grounding documented honestly,True,Resolved
+Artifact abundance reduced through artifact map and walkthrough,True,Resolved
+Day 7 continuity gap either regenerated or documented,True,Check note
+All outputs saved inside repo path,True,Confirmed
+Ready for git add/commit/push workflow,True,Ready

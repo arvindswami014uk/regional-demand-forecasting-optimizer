@@ -1,0 +1,28 @@
+DAY 14 PORTFOLIO CASE STUDY
+================================
+
+Project:
+Regional Demand Forecasting and Inventory Placement Optimizer
+
+Context:
+I built this capstone to simulate an Amazon-style network planning problem: forecasting regional demand accurately and converting that forecast into inventory placement decisions across a fulfillment network.
+
+Problem:
+If regional demand is misread, operations teams face stockouts, costly transfers, excess inventory, and weaker delivery performance.
+
+Approach:
+- Benchmarked baseline moving average against Prophet and XGBoost
+- Selected XGBoost as best model at 11.06% WMAPE
+- Translated forecast outputs into safety stock and reorder point decisions
+- Compared speed, cost, and carbon-proxy scenarios
+- Finalized a constrained strategy recommendation instead of stopping at unconstrained scenario ranking
+
+Results:
+- XGBoost improved forecast accuracy by 42.5% vs baseline
+- Safety stock value quantified at \$157,292.60
+- Replenishment need estimated at \$780,850.78
+- 41 SKU-region combinations flagged as high urgency
+- Balanced emerged as the final constrained recommendation
+
+Why this is strong portfolio work:
+It demonstrates that I can connect machine learning, inventory policy, and executive decision support in one business storyline instead of treating modeling as an isolated exercise.
